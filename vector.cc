@@ -21,6 +21,53 @@ class vector
     typedef std::size_t size_type;
     typedef ptrdiff_t difference_type;
     
+    vector()
+    {
+        
+    }
+    explicit vector(const alloc_type &)
+    {
+        
+    }
+    explicit vector(size_type,const alloc_type & = alloc_type() )
+    {
+        
+    }
+    vector(size_type,const value_type v,const alloc_type &=alloc_type() )
+    {
+        
+    }
+    template <typename InputIter>
+    vector(InputIter begin,InputIter end,const alloc_type & = alloc_type() )
+    {
+        
+    }
+    template<typename U>
+    vector(std::initialize_list<U>,const alloc_type & = alloc_type() )
+    {
+        
+    }
+    vector(const vector &)
+    {
+        
+    }
+    vector(const vector &,const alloc_type &)
+    {
+        
+    }
+    vector(vector &&)
+    {
+        
+    }
+    vector(vector &&,const alloc_type &)
+    {
+        
+    }
+    ~vector()
+    {
+        
+    }
+    
     iterator begin()
     {
         
@@ -118,5 +165,9 @@ class vector
     {
         
     }
+    void swap(vector &)noexcept
+    {
+    }
+    
 };
     
